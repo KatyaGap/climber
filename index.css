@@ -1,0 +1,163 @@
+
+.game {
+	display: flex;
+	position: fixed;
+}
+
+body {
+	background: rgb(131, 151, 154);
+}
+.div {
+	position: relative;
+}
+
+.mount {
+	position: relative;
+	width: 100%;
+	height: 90vh;
+	z-index: -1;
+} 
+.guy {
+	width: 50px;
+	height: 70px;
+}
+.place{
+	width: 50px;
+	height: 5px;
+	background-color: greenyellow;
+	position: absolute;
+}
+#flag {
+	position: absolute;
+	left: 73%;
+	bottom: 93%;
+	opacity: 0;
+}
+.place {
+	position: absolute;
+}
+#place1{
+	top: 82%;
+	left: 11%;
+}
+#place2 {
+	top: 66%;
+	left: 17%;
+}
+#place3 {
+	top: 45%;
+	left: 21%;
+}
+#place4 {
+	top: 35%;
+	left: 31%;
+}
+#place5 {
+	top: 18%;
+	left: 40%;
+}
+#place6 {
+	top: 29%;
+	left: 49%;
+}
+#place7 {
+	top: 48%;
+	left: 57%;
+}
+#place8 {
+	top: 60%;
+	left: 65%;
+}
+#place9 {
+	top: 33%;
+	left: 69%;
+}
+#place10 {
+	top: 6%;
+	left: 73%;
+}
+.keys {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+button {
+	background-color: greenyellow;
+	margin: 10px;
+	font-size: 18px;
+}
+button:hover {
+	background-color: white;
+	color: green;
+	font-weight: bolder;
+}
+
+@keyframes catMov {
+	from {
+		margin-left: 40%;
+	}
+	to {
+		margin-left: 70%;
+	}
+}
+@keyframes monkMov {
+	from {
+		left: 50%
+	}
+	to {
+		left: 35%
+	}
+}
+
+	@keyframes banMov {
+		from {
+			top: 0%
+		}
+		to {
+			top: 80%
+		}
+}
+
+@media (min-width: 768px) and (max-width:1400px) {
+	.guy {
+		width: 45px;
+		height: 65px;
+}
+.place{
+	width: 40px;
+	height: 4px;
+	background-color: greenyellow;
+	position: absolute;
+}
+#flag {
+	left: 71.5%
+}
+}
+
+	@media (min-width: 320px) and (max-width:768px) {
+		.guy {
+			width: 35px;
+			height: 55px;
+	}
+	#place1 {
+		top: 80%;
+	}
+	.place{
+		width: 20px;
+		height: 3px;
+		background-color: greenyellow;
+	}
+	#flag {
+		left: 68%;
+	}
+.mount {
+	height: 60vh;
+}
+button {
+	margin: 2px;
+	font-size: 15px;
+}
+#flag {
+	left: 69%
+}
+	}
